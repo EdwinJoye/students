@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/students">Students</a>
+    </nav>
+    <h1>Liste des étudiants</h1>
+    <div id="student-list"></div>
+    <script type="module">
+        import { fetchStudentList, deleteStudent } from "/assets/utils.js";
+        window.addEventListener('DOMContentLoaded', () => {
+            fetchStudentList();
+        });
+    </script>
+
+
+</body>
+
+</html>
