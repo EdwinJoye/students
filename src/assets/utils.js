@@ -28,7 +28,7 @@ const fetchStudentList = () => {
       });
     })
     .catch((error) =>
-      console.log("Erreur lors de la récupération des données")
+      console.error("Erreur lors de la récupération des données :", error)
     );
 };
 
